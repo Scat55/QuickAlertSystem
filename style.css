@@ -62,9 +62,6 @@ body {
   line-height: 1.5rem;
 }
 
-.hero__form-input::-moz-placeholder {
-  color: #96a2af;
-}
 
 .hero__form-input::placeholder {
   color: #96a2af;
@@ -81,9 +78,6 @@ body {
   border-bottom: 0.063rem solid #e6e7ec;
 }
 
-.hero__form-area::-moz-placeholder {
-  color: #96a2af;
-}
 
 .hero__form-area::placeholder {
   color: #96a2af;
@@ -129,7 +123,7 @@ body {
   margin-left: 1.625rem;
   width: 1.5rem;
   height: 1.5rem;
-  background: url("img/clip-icon.svg") no-repeat;
+  background: url(img/clip-icon.svg) no-repeat;
 }
 
 .castom__text:hover {
@@ -245,8 +239,11 @@ body {
 
 /* Aside */
 .aside {
+  position: absolute;
+  top: 6.2rem;
+  right: 2rem;
   width: 21.875rem;
-  height: 69.125rem;
+  height: 50.125rem;
   margin-top: 3.375rem;
   float: right;
   background-color: #FFFFFF;
@@ -322,7 +319,14 @@ body {
   background-color: #fff;
 }
 
+.aside__all-news {
+  display: flex;
+  flex-direction: column;
+}
+
 .aside__news {
+  display: flex;
+  flex-direction: column;
   width: 18.563rem;
   height: 6.875rem;
   border-bottom: 0.063rem solid #e6e7ec;
@@ -344,4 +348,208 @@ body {
   line-height: 1.5rem;
   color: #1D2129;
 
+}
+
+/* Media */
+
+@media(max-width:1515px) {
+  .aside {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 68.875rem;
+    height: 30.125rem;
+    float: left;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+
+
+  .aside__all-news {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media(max-width: 1020px) {
+  .aside {
+    width: 61.938rem;
+    height: 40.125rem;
+  }
+
+  .aside__all-news {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media(max-width:900px) {
+  .aside {
+    width: 54.438rem;
+  }
+}
+
+@media(max-width:600px) {
+
+  .aside {
+    width: 35.6rem;
+    height: 60.125rem;
+  }
+}
+
+@media(max-width:400px) {
+  .aside {
+    width: 25.5rem;
+  }
+}
+
+@media(max-width:300px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    height: 3.25rem;
+  }
+
+  .header__img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .header__title {
+    font-size: .7rem;
+    line-height: 1rem;
+  }
+
+  .main {
+    margin: 1rem;
+    max-width: 38.25rem;
+  }
+
+  .hero__form-input {
+    line-height: 1rem;
+    margin-top: 1.625rem;
+    height: 1.75rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero__form-input::placeholder {
+    font-size: 1rem;
+  }
+
+  .hero__form-area {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero__castom {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .castom__text {
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+
+  .castom__text::before {
+    content: "";
+    position: absolute;
+    top: 0.938rem;
+    left: -0.625rem;
+    margin-left: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(img/clip-icon.svg) no-repeat;
+  }
+
+  .recipients__info {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    margin-top: 10rem;
+
+  }
+
+  .recipients__mailing {
+    font-size: .8rem;
+  }
+
+  .recipients__people {
+    font-size: 1rem;
+  }
+
+  .recipients__text {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: center;
+  }
+
+  .recipients__human-name {
+    font-size: 1rem;
+  }
+
+  .recipients__human-post {
+    font-size: 0.8rem;
+  }
+
+  .recipients__input {
+    height: 2rem;
+  }
+
+  .recipients__input::placeholder {
+    font-size: 1rem;
+  }
+
+  .recipients__title {
+    font-size: 1.2rem;
+  }
+
+  .aside {
+    margin: 1rem;
+    width: 16.938rem;
+    transform: translateY(-3rem);
+  }
+
+  .aside__title {
+    margin-top: 2rem;
+  }
+
+  .aside__titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .aside__input {
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .aside__input::placeholder {
+    font-size: .8rem;
+  }
+
+  .aside__all-news {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .aside__news {
+    width: 100%;
+    margin-bottom: .1rem;
+  }
+
+  .aside__news-heading {
+    font-size: 1rem;
+  }
 }
