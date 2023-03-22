@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #f6f6f6;
@@ -13,12 +14,14 @@ body {
 .header {
   background-color: #fff;
 }
+
 .header__logo {
   display: flex;
   justify-content: flex-start;
   gap: 0.5rem;
   padding-left: 2rem;
 }
+
 .header__title {
   font-weight: 500;
   font-size: 1.5rem;
@@ -42,11 +45,13 @@ body {
 .hero {
   max-width: 77.938rem;
 }
+
 .hero__form {
   display: flex;
   flex-direction: column;
   max-width: 100%;
 }
+
 .hero__form-input {
   display: block;
   width: 100%;
@@ -56,12 +61,15 @@ body {
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
+
 .hero__form-input::-moz-placeholder {
   color: #96a2af;
 }
+
 .hero__form-input::placeholder {
   color: #96a2af;
 }
+
 .hero__form-area {
   display: block;
   width: 100%;
@@ -72,12 +80,15 @@ body {
   line-height: 1.361rem;
   border-bottom: 0.063rem solid #e6e7ec;
 }
+
 .hero__form-area::-moz-placeholder {
   color: #96a2af;
 }
+
 .hero__form-area::placeholder {
   color: #96a2af;
 }
+
 .hero__castom {
   display: inline-flex;
   justify-content: flex-end;
@@ -91,6 +102,7 @@ body {
   height: 0.063rem;
   opacity: 0;
 }
+
 .castom__text {
   position: relative;
   display: flex;
@@ -108,6 +120,7 @@ body {
   cursor: pointer;
   transition: all 0.3s;
 }
+
 .castom__text::before {
   content: "";
   position: absolute;
@@ -118,10 +131,14 @@ body {
   height: 1.5rem;
   background: url("../img/clip-icon.svg") no-repeat;
 }
+
 .castom__text:hover {
   background-color: #e3e4ea;
   transform: scale(1.05);
 }
+
+/* Recipients */
+
 .recipients__title {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
@@ -130,12 +147,14 @@ body {
   line-height: 2.5rem;
   color: #1d2129;
 }
+
 .recipients__form {
   display: inline-flex;
   align-items: center;
   background: #f2f3f5;
   width: 100%;
 }
+
 .recipients__input {
   position: relative;
   width: 100%;
@@ -145,9 +164,11 @@ body {
   background: #f2f3f5;
   border-radius: 0.313rem;
 }
+
 .recipients__btn {
   margin-left: 1rem;
 }
+
 .recipients__text {
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -156,30 +177,138 @@ body {
   line-height: 2.5rem;
   color: #1d2129;
 }
+
 .recipients__people {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
+
 .recipients__check {
   transform: translateY(-1.25rem);
 }
+
 .recipients__human {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.25rem;
 }
+
 .recipients__human-name {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: #1d2129;
 }
+
 .recipients__human-post {
   margin-bottom: 1rem;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25rem;
   color: #96a2af;
+}
+
+/* Aside */
+.aside {
+  width: 21.875rem;
+  height: 100vh;
+  margin-top: 3.375rem;
+  float: right;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+}
+
+.aside__titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.aside__title {
+  display: inline-block;
+
+  font-weight: 500;
+  font-size: 1.625rem;
+  line-height: 2.5rem;
+  color: #1D2129;
+}
+
+.aside__link {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+  color: #2D56E7;
+}
+
+.aside__form {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1.25rem;
+  background: #f2f3f5;
+  width: 100%;
+}
+
+.aside__input {
+  position: relative;
+  width: 100%;
+  height: 3.5rem;
+  padding: 1rem;
+  font-size: 1.125rem;
+  background: #f2f3f5;
+  border-radius: 0.313rem;
+}
+
+.aside__input::placeholder {
+  font-size: 1.125rem;
+}
+
+.aside__btn {
+  margin-left: 1rem;
+}
+
+.aside__filter {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  gap: 0.25rem;
+}
+
+.aside__filter-title {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.aside__filter-btn {
+  background-color: #fff;
+}
+
+.aside__news {
+  width: 18.563rem;
+  height: 6.875rem;
+  border-bottom: 0.063rem solid #e6e7ec;
+}
+
+.aside__news-data {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #96A2AF;
+
+}
+
+.aside__news-heading {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #1D2129;
+
 }
