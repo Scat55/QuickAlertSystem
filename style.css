@@ -31,3 +31,94 @@ body {
   height: 6.25rem;
 }
 
+.main {
+  margin-top: 3.375rem;
+  margin-left: 1.813rem;
+  max-width: 68.25rem;
+  border-radius: 0.75rem;
+  background-color: #fff;
+}
+
+.hero {
+  max-width: 77.938rem;
+}
+.hero__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.hero__form-input {
+  display: block;
+  width: 100%;
+  margin-top: 2.625rem;
+  height: 2.75rem;
+  border-bottom: 0.063rem solid #e6e7ec;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.hero__form-input::-moz-placeholder {
+  color: #96a2af;
+}
+.hero__form-input::placeholder {
+  color: #96a2af;
+}
+.hero__form-area {
+  display: block;
+  width: 100%;
+  resize: none;
+  padding-top: 1.625rem;
+  padding-bottom: 10rem;
+  font-size: 1.125rem;
+  line-height: 1.361rem;
+  border-bottom: 0.063rem solid #e6e7ec;
+}
+.hero__form-area::-moz-placeholder {
+  color: #96a2af;
+}
+.hero__form-area::placeholder {
+  color: #96a2af;
+}
+.hero__castom {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.castom__file {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.063rem;
+  height: 0.063rem;
+  opacity: 0;
+}
+.castom__text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 16.813rem;
+  height: 3.5rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #1d2129;
+  border: 0.063rem solid #e6e7ec;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.castom__text::before {
+  content: "";
+  position: absolute;
+  top: 0.938rem;
+  left: -0.625rem;
+  margin-left: 1.625rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url("../img/clip-icon.svg") no-repeat;
+}
+.castom__text:hover {
+  background-color: #e3e4ea;
+  transform: scale(1.05);
+}
