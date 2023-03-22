@@ -129,7 +129,7 @@ body {
   margin-left: 1.625rem;
   width: 1.5rem;
   height: 1.5rem;
-  background: url("img/clip-icon.svg") no-repeat;
+  background: url(img/clip-icon.svg) no-repeat;
 }
 
 .castom__text:hover {
