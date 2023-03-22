@@ -210,10 +210,43 @@ body {
   color: #96a2af;
 }
 
+.recipients__info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin-top: 16.75rem;
+}
+
+.recipients__people {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+  color: #96A2AF;
+
+}
+
+.recipients__mailing {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background: #2D56E7;
+  border-radius: 0.313rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+.recipients__mailing:hover {
+  background: #2342b2;
+  transform: scale(1.05);
+}
+
 /* Aside */
 .aside {
   width: 21.875rem;
-  height: 100vh;
+  height: 69.125rem;
   margin-top: 3.375rem;
   float: right;
   background-color: #FFFFFF;
