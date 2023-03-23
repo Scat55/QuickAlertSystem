@@ -404,13 +404,13 @@ body {
   }
 }
 
-@media(max-width:400px) {
+/* @media(max-width:400px) {
   .aside {
     width: 25.5rem;
   }
-}
+} */
 
-@media(max-width:300px) {
+@media(max-width:300px) and (max-width: 400px) {
   .wrapper {
     display: flex;
     align-items: center;
